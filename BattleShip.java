@@ -30,12 +30,12 @@ public class BattleShip
       }
       else
       {
-         int r = (int)(Math.random()*8);
-         int c = (int)(Math.random()*5);
+         int c = (int)(Math.random()*8);
+         int r = (int)(Math.random()*5);
          for(int y = 0; y<4; y++)
          {
-            board[c][r] = "S";
-            c = c+1;
+            board[r][c] = "S";
+            r = r+1;
          }
       }
    }
@@ -134,11 +134,11 @@ public class BattleShip
          {
             if(t > 0)
             {
-            System.out.println("You have " + t + " topedoes left"); 
+               System.out.println("You have " + t + " topedoes left"); 
             }
             else
             {
-             System.out.println("You have 0 topedoes, try again.");
+               System.out.println("You have 0 topedoes, try again.");
             }
          }
       }
